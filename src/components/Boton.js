@@ -4,19 +4,19 @@ class Boton extends React.Component {
   render() {
     return (
       <div className= "opcion">
-        <p className= "cajita">
+        <div className= "cajaBoton">
           <button id="a" className="botones" onClick={this.props.handlerClick}>
             A
           </button>
-          { this.props.opciones.a}
-        </p>
+          <h3>{ this.props.opciones.a}</h3>
+        </div>
         
-        <p className= "cajita">
+        <div className= "cajaBoton">
           <button id="b" className="botones" onClick={this.props.handlerClick}>
             B
           </button>
-          { this.props.opciones.b}
-        </p>
+          <h3>{ this.props.opciones.b}</h3>
+        </div>
       </div>
     );
   }

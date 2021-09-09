@@ -5,12 +5,11 @@ class Historial extends React.Component{
         return (
         <div className= "recordatorio">
             <p>
-            Selección Anterior {this.props.historial[this.props.historial.length -1]}
+            Selección anterior {this.props.historial[this.props.historial.length -1]}
             </p>
-            <p>Historial de opciones elegias: </p>
+            <p>Historial de opciones elegidas: </p>
             <ul>{this.props.historial.slice(0, -1).map( (item, i) => <li key={i}>{item}</li> )}
-                {/* {this.props.historial.map((item, i)=><li key={i}>{item}</li>)} */}
-                {/* .slice(0, this.props.historial.length -1) */}
+                
                 
                
             </ul>
